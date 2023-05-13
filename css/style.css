@@ -432,6 +432,17 @@ img {
 .subscribe-input:focus {
   border-color: var(--blue-nomal-color);
 }
+.subscribe-btn-wrapper {
+  position: relative;
+  display: flex;
+}
+.subscribe-icon {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  fill: var(--white-color);
+}
 
 /* Section Portfolio  */
 .section-portfolio {
@@ -566,7 +577,6 @@ img {
   color: var(--blue-accent-color);
 }
 .button.subscribe {
-  display: inline-block;
   min-width: 165px;
   padding-left: 24px;
   padding-right: 64px;
@@ -574,9 +584,11 @@ img {
   padding-bottom: 8px;
   color: var(--white-text-color);
   background-color: var(--blue-nomal-color);
+  transition: background-color var(--anim-time);
 }
-.text {
-  color: var(--primery-text-color);
+.button.subscribe:focus,
+.button.subscribe:hover {
+  background-color: var(--blue-accent-color);
 }
 
 /* MODAL WINDOW  */

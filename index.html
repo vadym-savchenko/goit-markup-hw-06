@@ -563,10 +563,18 @@
         </div>
         <div class="subscribe-block">
           <p class="footer-subscribe">Subscribe</p>
-          <label for="">
-            <input type="email" name="email" placeholder="E-mail" />
-          </label>
-          <button type="submit" class="button subscribe">Subscribe</button>
+          <form class="subscribe-form">
+            <label class="subscribe-field" for="">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button type="submit" class="button subscribe">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
@@ -584,7 +592,14 @@
         <form name="modal_form">
           <label for="modal_name">Name</label>
           <div>
-            <input class="" type="text" name="modal_neme" id="modal_name" />
+            <input
+              class=""
+              type="text"
+              name="modal_neme"
+              id="modal_name"
+              required
+              minlength="2"
+            />
             <svg class="" width="18" height="18">
               <use></use>
             </svg>
@@ -592,7 +607,13 @@
 
           <label for="modal_phone">Phone</label>
           <div>
-            <input class="" type="text" name="modal_phone" id="modal_phone" />
+            <input
+              class=""
+              type="text"
+              name="modal_phone"
+              id="modal_phone"
+              required
+            />
             <svg class="" width="18" height="24">
               <use></use>
             </svg>
@@ -600,7 +621,13 @@
 
           <label for="modal_email">Email</label>
           <div>
-            <input class="" type="text" name="modal_email" id="modal_email" />
+            <input
+              class=""
+              type="text"
+              name="modal_email"
+              id="modal_email"
+              required
+            />
             <svg class="" width="18" height="24">
               <use></use>
             </svg>

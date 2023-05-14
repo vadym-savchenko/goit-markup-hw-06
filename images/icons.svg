@@ -74,7 +74,7 @@
       <path d="M32 2.667l-32 15 10.227 3.156 15.773-12.323-11.997 13.488 0.009 0.004-0.012-0.004v7.345l5.735-5.576 7.267 2.243 4.999-23.333z"></path>
     </symbol>
     <symbol id="icon-unchecked" viewBox="0 0 32 32">
-    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M4 1h24c1.657 0 3 1.343 3 3v24c0 1.657-1.343 3-3 3h-24c-1.657 0-3-1.343-3-3v-24c0-1.657 1.343-3 3-3z"></path>
+      <path fill="none" stroke="#2E2F42" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M4 1h24c1.657 0 3 1.343 3 3v24c0 1.657-1.343 3-3 3h-24c-1.657 0-3-1.343-3-3v-24c0-1.657 1.343-3 3-3z"></path>
     </symbol>
     <symbol id="icon-checked" viewBox="0 0 32 32">
       <path fill="#404bbf" style="fill: var(--color1, #404bbf)" d="M4 1h24c1.657 0 3 1.343 3 3v24c0 1.657-1.343 3-3 3h-24c-1.657 0-3-1.343-3-3v-24c0-1.657 1.343-3 3-3z"></path>

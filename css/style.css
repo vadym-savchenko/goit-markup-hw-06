@@ -676,6 +676,7 @@ img {
 }
 
 .modal-title {
+  margin-bottom: 16px;
   font-weight: 500;
   color: var(--title-text-color);
 }
@@ -756,4 +757,34 @@ img {
   user-select: none;
 }
 .form-check-input {
+}
+.form-custom-check {
+}
+
+/* svg checkbox */
+.unchecked {
+  opacity: 1;
+  transition: opasity var(--anim-time);
+}
+.checked {
+  opacity: 0;
+}
+
+.form-check-input:checked + .form-custom-check > .unchecked {
+  opacity: 0;
+}
+.form-check-input:checked + .form-custom-check > .checked {
+  opacity: 1;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

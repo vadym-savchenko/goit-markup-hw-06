@@ -433,15 +433,8 @@ img {
 .subscribe-input:focus {
   border-color: var(--blue-nomal-color);
 }
-.subscribe-btn-wrapper {
-  position: relative;
-  display: flex;
-}
+
 .subscribe-icon {
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
   fill: var(--white-color);
 }
 
@@ -578,11 +571,10 @@ img {
   color: var(--blue-accent-color);
 }
 .button.subscribe {
+  display: flex;
   min-width: 165px;
-  padding-left: 24px;
-  padding-right: 64px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 24px;
+  gap: 16px;
   color: var(--white-text-color);
   background-color: var(--blue-nomal-color);
   transition: background-color var(--anim-time);
@@ -697,14 +689,13 @@ img {
   height: 40px;
   padding: 0;
   padding-left: 38px;
-  outline: transparent;
-  outline-offset: -1px;
+  outline: none;
   border-radius: 4px;
   border: 1px solid;
-  transition: outline var(--anim-time);
+  transition: border-color var(--anim-time);
 }
 .form-field:focus {
-  outline: 1px solid var(--blue-nomal-color);
+  border-color: var(--blue-nomal-color);
 }
 .form-icon {
   position: absolute;
@@ -728,14 +719,13 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   resize: none;
-  outline: transparent;
-  outline-offset: -1px;
+  outline: none;
   border-radius: 4px;
   border: 1px solid;
-  transition: outline var(--anim-time);
+  transition: border-color var(--anim-time);
 }
 .form-textarea:focus {
-  outline: 1px solid var(--blue-nomal-color);
+  border-color: var(--blue-nomal-color);
 }
 .form-textarea::placeholder {
   font-size: 12px;
@@ -745,7 +735,7 @@ img {
 }
 .form-agreement {
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 6px;
   margin-bottom: 24px;
 }
@@ -755,6 +745,9 @@ img {
   letter-spacing: 0.04em;
   color: var(--modal-text-color);
   user-select: none;
+}
+.modal-link {
+  color: var(--blue-nomal-color);
 }
 .form-check-input {
 }
